@@ -1,0 +1,639 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "team",
+              "type": "teams"
+            },
+            {
+              "name": "info",
+              "type": "info"
+            }
+          ],
+          "name": "GetInfoIntent",
+          "samples": [
+            "I am looking for information about the soccer team called {team}",
+            "I\u0027d like to know the {info} of {team} please",
+            "Okay now I\u0027m wondering {team} in their {info}",
+            "what {info} are {team} in",
+            "Who will {team} {info}",
+            "What was the {info}",
+            "{info}",
+            "Are they {info}",
+            "Okay now I\u0027m also wondering {info} of {team}",
+            "Okay {info}",
+            "what is {team} {info} right now",
+            "I need your help getting information about {team} in EPL I\u0027m wondering what is their {info} right now",
+            "Hi Today I need your help getting information about {team} in EPL I\u0027m wondering what is their {info} right now",
+            "{info} has {team} played so far",
+            "Hello I need to know the {info} of {team}",
+            "Hi I am looking for information about the soccer team called {team}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "GoodbyeIntent",
+          "samples": [
+            "thats all I needed to know",
+            "thank you for helping",
+            "Perfect That\u0027s all I needed to know Thank you very much for your help",
+            "thats all I need",
+            "okay great thats all I need"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "place"
+                ],
+                "value": "leaguePosition"
+              },
+              "id": "leaguePosition"
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "who\u0027s their manager",
+                  "who is the manager"
+                ],
+                "value": "manager"
+              },
+              "id": "manager"
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "when will they play their next game"
+                ],
+                "value": "nextGame"
+              },
+              "id": "nextGame"
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "last game what was the score",
+                  "score of the last game"
+                ],
+                "value": "lastScore"
+              },
+              "id": "lastScore"
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "play against next"
+                ],
+                "value": "nextOpponent"
+              },
+              "id": "nextOpponent"
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "how many games"
+                ],
+                "value": "numGamesPlayed"
+              },
+              "id": "numGamesPlayed"
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "who did they play last"
+                ],
+                "value": "lastOpponent"
+              },
+              "id": "lastOpponent"
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "playing right now"
+                ],
+                "value": "playingNow"
+              },
+              "id": "playingNow"
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "record"
+                ],
+                "value": "winLossRecord"
+              },
+              "id": "winLossRecord"
+            }
+          ],
+          "name": "info"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "wimbledon"
+                ],
+                "value": "Wimbledon"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "wigan athletic"
+                ],
+                "value": "Wigan Athletic"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "west bromwich albion"
+                ],
+                "value": "West Bromwich Albion"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "watford"
+                ],
+                "value": "Watford"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "tottenham hostspur"
+                ],
+                "value": "Tottenham Hostspur"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "swindon town"
+                ],
+                "value": "Swindon Town"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "swansea city"
+                ],
+                "value": "Swansea City"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "sunderland"
+                ],
+                "value": "Sunderland"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "stoke city"
+                ],
+                "value": "Stoke City"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "sheffield wednesday"
+                ],
+                "value": "Sheffield Wednesday"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "sheffield united"
+                ],
+                "value": "Sheffield United"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "reading"
+                ],
+                "value": "Reading"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "queens park rangers"
+                ],
+                "value": "Queens Park Rangers"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "portsmouth"
+                ],
+                "value": "Portsmouth"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "oldham athletic"
+                ],
+                "value": "Oldham Athletic"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "norwich city"
+                ],
+                "value": "Norwich City"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "middlesbrough"
+                ],
+                "value": "Middlesbrough"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "ipswich town"
+                ],
+                "value": "Ipswich Town"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "hull city"
+                ],
+                "value": "Hull City"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "huddersfield town"
+                ],
+                "value": "Huddersfield Town"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "derby county"
+                ],
+                "value": "Derby County"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "coventry city"
+                ],
+                "value": "Coventry City"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "chartlon athletic"
+                ],
+                "value": "Chartlon Athletic"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "cardiff city"
+                ],
+                "value": "Cardiff City"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "burnley"
+                ],
+                "value": "Burnley"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "bradford city"
+                ],
+                "value": "Bradford City"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "bolton wanderers"
+                ],
+                "value": "Bolton Wanderers"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "blackpool"
+                ],
+                "value": "Blackpool"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "blackburn rovers"
+                ],
+                "value": "Blackburn Rovers"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "birmingham city"
+                ],
+                "value": "Birmingham City"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "barnsley"
+                ],
+                "value": "Barnsley"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "wolverhampton wanderers"
+                ],
+                "value": "Wolverhampton Wanderers"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "west ham united"
+                ],
+                "value": "West Ham United"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "tottenham hotspur"
+                ],
+                "value": "Tottenham Hotspur"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "southampton"
+                ],
+                "value": "Southampton"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "nottingham forest"
+                ],
+                "value": "Nottingham Forest"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "newcastle united"
+                ],
+                "value": "Newcastle United"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "manchester united"
+                ],
+                "value": "Manchester United"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "manchester city"
+                ],
+                "value": "Manchester City"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "liverpool"
+                ],
+                "value": "Liverpool"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "leicester city"
+                ],
+                "value": "Leicester City"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "leeds united"
+                ],
+                "value": "Leeds United"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "fulham"
+                ],
+                "value": "Fulham"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "everton"
+                ],
+                "value": "Everton"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "crystal palace"
+                ],
+                "value": "Crystal Palace"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "chelsea"
+                ],
+                "value": "Chelsea"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "brighton \u0026 hove albion"
+                ],
+                "value": "Brighton \u0026 Hove Albion"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "brentford"
+                ],
+                "value": "Brentford"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "bournemouth"
+                ],
+                "value": "Bournemouth"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Aston villa",
+                  "their",
+                  "aston villa"
+                ],
+                "value": "Aston Villa"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "their",
+                  "arsenal"
+                ],
+                "value": "Arsenal"
+              }
+            }
+          ],
+          "name": "teams"
+        }
+      ],
+      "invocationName": "premier league"
+    }
+  }
+}
